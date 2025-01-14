@@ -1,0 +1,37 @@
+{
+  "name": "@xofeulb/bluefox-script",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.js"
+    },
+    "./Automation/*": {
+      "import": "./src/Automation/*"
+    },
+    "./Util/*": {
+      "import": "./src/Util/*"
+    }
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xoFeulB/BlueFoxScript.git"
+  },
+  "keywords": [
+    "BlueFox"
+  ],
+  "author": "BlueFoxEnterprise",
+  "license": "© BlueFoxEnterprise / BlueFoxEnterprise Common License / https://github.com/xoFeulB/BlueFoxScript/blob/main/LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/xoFeulB/BlueFoxScript/issues"
+  },
+  "homepage": "https://github.com/xoFeulB/BlueFoxScript",
+  "devDependencies": {
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
